@@ -1,3 +1,5 @@
+
+
 var height;
 if (height >= 42) {    
     console.log("Get on that ride, kiddo!");
@@ -11,9 +13,11 @@ else {
 //Stretch Feature 1
 var height;
 var age;
-if (height >= 42 , age >=10) {    
+if (height >= 42, age >=10) {    
     console.log("Get on that ride, kiddo!");
-}
+    
+    }
+
 else {    
     console.log("Sorry kiddo. Maybe next year");
 }
@@ -21,3 +25,13 @@ else {
 
 
 //Stretch Feature 2
+var height;
+var age;
+if (height >= 42, age >=10) {    
+    console.log("Get on that ride, kiddo!");
+    
+    }
+
+else {    
+    console.log("Sorry kiddo. Maybe next year");
+}
