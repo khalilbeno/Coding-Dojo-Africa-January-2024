@@ -1,0 +1,29 @@
+.srch{
+    padding: 0 30px;
+    margin: 1%; 
+    border-radius: 5cm;
+    border-color: blue;
+    border: turquoise;
+    color: aqua;
+    background-color: beige;
+    /* height: auto; */
+    width: 120px;
+    height: 30px;
+}
+.plus{
+    margin: 1%;
+    border-radius: 50%;
+    color: aliceblue;
+    background-color: aqua;
+    border-color: beige;
+
+}
+.creation{
+    box-shadow: 10px 5px 5px black;
+    background-color:cornflowerblue;
+    color: azure;
+    margin: 1%;
+    border-color: black;
+    padding: 10px;
+    
+}
