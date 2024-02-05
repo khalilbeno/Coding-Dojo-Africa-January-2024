@@ -1,0 +1,214 @@
+.nav {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0px 20px;
+    height: 80px; 
+    display: flex;
+    vertical-align: top;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap:20px;
+    margin: 0px 160px;
+    
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+.active{
+    font-weight: bold;
+}
+.btn{
+    background-color: #17A2B8;
+    color: white;
+    border: 2px solid black;
+    width: 90px;
+    height: 30px;
+    box-shadow: 3px 3px 2px 1px black;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top{
+    width: 300px;
+    margin-left: 300px;
+    margin-top: 100px;
+    justify-content: space-between; 
+    align-items: center;
+    
+
+
+}
+.box2{
+    background-color: white;
+    padding: 20px 5px;
+    width: 366px;
+    border: 2px solid gray;
+    
+}
+.box1{
+    background-color: rgb(23,162,184);
+    width: 380px;
+    height: 70px;
+    
+}
+
+.pic{
+    border-radius: 50%;
+    background-color: #fff;
+    height: 70px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+img{
+    height: 15px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.username{
+    padding: 0 20px;
+}
+.descrip{
+    padding: 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left{
+    /* display: flex; */
+    /* margin: -70px -120px; */
+    padding: 0px 20px;
+    width: 800px;
+    height: 800px;
+}
+.bottom{
+    background-color: white;
+    border: 2px solid gray;
+    width: 375px;
+    height: 150px;
+}
+.Education{
+    height: 35px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+.Education p{
+    padding: 7px 27px 10px 27px ;
+    align-items: center;
+}
+.top,.bottom{
+    margin: 30px 160px;
+}
+.tasks{
+    padding:0 27px;
+}
+.undertask {
+    color: gray;
+}
+.undertask p{
+    padding: 5px 27px;
+    font-size: 18px;
+}
+.tasks p{ 
+    font-size: 22px;
+}
+
+b{
+    font-size: xx-large;
+}
+.topright{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    float: right;
+    margin: 0px 20px;
+    width: 200px;
+    height: 170px;
+    border: 2px solid gray;
+}
+.cnxreq{ 
+    color: white;
+    background-color: rgb(51,51, 51);
+    width: 200px;
+    height: 40px;
+}
+h5{
+    padding: 10px 20px;
+}
+.todd, .phil{
+display:flex ;
+justify-content: space-between;
+}
+.container2 {
+    position: relative;
+}
+.requests img{
+    border-radius: 50%;
+    background-color: #fff;
+    height: 25px;
+    padding: 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.todd p,.phil p{
+    padding: 25px 0px;
+}
+span{
+    background-color: rgb(204,204,204);
+    color: black;
+    border: 2px solid rgb(204,204,204);
+    font-weight: 200;
+    border-radius: 50%;
+}
+.bottomright{
+    position: absolute;
+    float: right;
+    top: 200px;
+    right: 20px;
+    width: 200px;
+    /* background-color: #17A2B8; */
+    border: 2px solid gray;
+}
+.yourcnx{
+    background-color:rgb(51,51, 51) ;
+    color: white;
+    
+}
+.Adrien,.Anne,.Alayne,.Arry{
+    display: flex;
+
+}
+.Adrien img,.Anne img,.Alayne img,.Arry img{
+    border-radius: 50%;
+    background-color: #fff;
+    height: 25px;
+    padding: 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.Adrien p,.Anne p,.Alayne p,.Arry p {
+    padding: 22px 5px ;
+}
+.more{
+    border: 2px solid gray;
+    height: 30px;
+    padding: 0px 20px;
+    
+}
+.more p{
+    color: blue;
+}
+.right{
+    padding: 100px;
+}
