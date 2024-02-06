@@ -4,9 +4,9 @@
     padding: 0px 20px;
     height: 80px; 
     display: flex;
-    vertical-align: top;
-    align-items: center;
-    justify-content: space-between;
+    /* vertical-align: top;
+    align-items: center; */
+    /* justify-content: space-between; */
 }
 
 .nav-links {

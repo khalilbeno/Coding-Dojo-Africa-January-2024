@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: black;
+    width: 1000px;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.subnav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.btn{
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+    width: 90px;
+    height: 30px;
+
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.left{
+    flex= 2;
+}
+.right{
+    flex= 1;
+}
