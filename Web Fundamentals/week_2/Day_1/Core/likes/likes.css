@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 1000px;
+    padding: 100px 200px;
+}
+.box{
+    width: 300px;
+    height: 130px;
+    border: 3px solid black;
+}
+.top{
+display: flex;
+justify-content: space-around;
+height: 40px;
+align-items: center;
+}
+.nbrlikes{
+    display: flex;
+    margin-left: 50px;
+}
+.nbrlikes p,button  {
+    padding: 5px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    padding: 20px;
+}
+button{
+    background-color: rgb(255,217,102);
+    box-shadow:3px 3px 2px 1px black;;
+}
