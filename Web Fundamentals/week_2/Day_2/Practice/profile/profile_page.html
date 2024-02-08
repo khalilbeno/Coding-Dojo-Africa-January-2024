@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile page</title>
+    <link rel="stylesheet" href="profile_page.css">
+</head>
+<body>
+    <div class="container">
+        <header class="nav">
+            <ul class="nav-links"><b>Profile</b>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+            <div class="nav-title">
+                <button class="btn">Sign Out</button>
+            </div>
+        </header> 
+        <div class="container2">
+            <div class="left">
+                <div class="top">
+                    <div class="box1">
+                        <div><img src="images/jane-m.jpg" class="pic"></div>
+                    </div>
+                    <div class="box2">
+                        <div class="username"><h1 >Jone Doe</h1></div>
+                        <div class="position">
+                            <img src="icons/map-marker.png">Seattle
+                        </div>
+                        <div class="descrip">
+                            <p>Developer|Engineer|Problem Solver</p>
+                            <p>Master of shadows and the internet!</p>
+                        </div>
+                        <div class="param">
+                            <img src="icons/gear.png"><a href="#" onclick="editname()">edit profile</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="Education"><p>Education</p></div>
+                    <div class="tasks">
+                        <p> Coding Dojo - Full stack bootcamp</p>    
+                    </div>
+                    <div class="undertask"><p>Dec 2019-Mar 2020</p></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="topright">
+                    <div class="cnxreq">
+                        <h5><span class="nb2">2</span>Connection Requests </h5>
+                    </div>
+                    <div class="requests">
+                        <div class="todd">
+                            <img src="images/todd-s.jpg" alt="todd-s" >
+                            <p>Todd E</p>
+                            <img src="icons/accept-circle.png" onclick="accept('todd')">
+                            <img src="icons/close-circle.png" onclick="denied('todd')">
+                        </div>
+                        <div class="phil">
+                            <img src="images/phil-s.jpg" alt="phil-s">
+                            <p>Phil K</p>
+                            <img src="icons/accept-circle.png" onclick="accept2('phil')">
+                            <img src="icons/close-circle.png" onclick="denied2('phil')">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomright">
+                    <div class="yourcnx">
+                        <h5><span class="nb418">418</span>Your Connections</h5>
+                    </div>
+                    <div class="conncections">
+                        <div class="Adrien">
+                            <img src="images/adrien-s.jpg">
+                            <p>Adrien D</p>
+                        </div>
+                        <div class="Anne">
+                            <img src="images/anne-s.jpg">
+                            <p>Anne J</p>
+                        </div>
+                        <div class="Alayne">
+                            <img src="images/alayne-s.jpg">
+                            <p>Alayne T</p>
+                        </div>
+                        <div class="Arry">
+                            <img src="images/arry-s.jpg">
+                            <p>Arry Y</p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <a href="#"><p>View More</p></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="profile_page.js"></script>
+</body>
+</html>
