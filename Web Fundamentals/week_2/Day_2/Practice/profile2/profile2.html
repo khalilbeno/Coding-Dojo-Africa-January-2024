@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succulent Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile2.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <img class="image" src="./images/assets/leaf.png" alt="leaf">
+        <h1>Profile</h1>
+        <input type="text" placeholder="    search for anything">
+        <button> sign In</button>
+        <img onclick="alert('Your card is empy!');" class="image1" src="./images/assets/cart-dark.png" alt="cart-dark">
+    </nav>
+    <!-- end navbar  -->
+    <!-- header  -->
+    <header>
+        <ul class="name">
+            <li>Aeonium</li>
+            <li>Andormischus</li>
+            <li>Agave</li>
+            <li>aloe</li>
+            <li>Anacampseros</li>
+            <li>Aristaloe</li>
+            <li>more...</li>
+        </ul>
+    </header>
+    <!-- end header  -->
+    <!-- source  -->
+    <div class="source">
+        <img onclick="switchColor()" class="switcheur" src="./images/assets/switch.jpg" alt="switch">
+        <h2> Your Source for Serious Succulent Specialties</h2>
+    </div>
+    <!-- end source  -->
+    <!-- main  -->
+    <main>
+        <!-- left side -->
+        <div class="left">
+            <div class="info">
+                <p> Discover succ- <br>   ulent varieties <br> one pot or rack <br> at a time!</p>
+                <h3 class="row"> Discover <img src="./images/assets/arrow-light.png" alt="arrow-light"></h3>
+            </div>  
+            <img onmouseover="changeImg(this)" onmouseleave="returnImg(this)" class="image2" src="./images/assets/succulents-2.jpg" alt="succulents-2">
+        </div>
+        <!-- end left side  -->
+        <!-- right side  -->
+        <div class="right">
+            <img class="image3" src="./images/assets/aloe-m.jpg" alt="aloe-m">
+            <h3 class="row"> Soothing Aloe <img src="./images/assets/arrow-light.png" alt="arrow-light"></h3>
+        </div>
+        <!-- end right side  -->
+    </main>
+    <!-- end main  -->
+    <!-- container -->
+    <div class="container">
+        <div class="type">
+            <img class="image4" src="./images/assets/aeonium-s.jpg" alt="aeonium-s">
+            <p>Aeonium</p>
+        </div>
+        <div class="type">
+            <img class="image4" src="./images/assets/aloe-s.jpg" alt="aloe-s">
+            <p>Aloe</p>
+        </div>
+        <div class="type">
+            <img class="image4" src="./images/assets/cactus-s.jpg" alt="Cactus">
+            <p>Cactus</p>
+        </div>
+        <div class="type">
+            <img class="image4" src="./images/assets/echeveria-s.jpg" alt="echeveria-s">
+            <p>Echeveria</p>
+        </div>
+        <div class="type">
+            <img class="image4" src="./images/assets/sedum-s.jpg" alt="sedum-s">
+            <p>Sedum</p>
+        </div>
+        <div class="type">
+            <img class="image4" src="./images/assets/sempervivum-s.jpg" alt="sempervivum-s">
+            <p>Sempervivum</p>
+        </div>
+    </div>
+    <!-- end container  -->
+    <!-- message  -->
+    <div class="message">
+        <img class="image5" src="./images/assets/alert-dark.png" alt="alert-dark">
+        <p> this site makes use of third-party cookies, by clicking "I accept"<br> you agree to the terms outlined in our <a href="#">cookie policy.</a></p>
+        <button onclick="Hide(this)"> I Accept </button>
+    </div>
+    <!-- end message  -->
+    <script src="profile2.js"></script>
+</body>
+</html
