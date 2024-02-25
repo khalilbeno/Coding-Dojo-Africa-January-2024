@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.empty{
+    background-color: rgb(159,197,248);
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    width: 200;
+}
