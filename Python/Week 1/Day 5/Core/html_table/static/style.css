@@ -1,0 +1,25 @@
+body{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 2px solid black; /* Make the border thicker */
+    padding: 8px;
+    text-align: left;
+
+}
+td:hover{
+    background-color: gray;
+
+}
+th{
+    background-color: rgb(52,58,62);
+    color:rgb(229,174,19);
+}
