@@ -1,0 +1,36 @@
+#========== dojos ============
+
+SELECT * FROM dojoo.dojos;
+INSERT INTO dojos (name) 
+VALUES ('ahmed'),('sami'),('amir');
+delete from dojos where id>=1;
+INSERT INTO dojos (name) 
+VALUES ('ahmed'),('sami'),('amir');
+UPDATE dojos SET name='dev' where id=4;
+UPDATE dojos SET name='data science' where id=5;
+UPDATE dojos SET name='big data' where id=6;
+
+#=============== ninjas ================
+
+SELECT * FROM dojoo.ninjas;
+
+INSERT INTO dojoo.ninjas (first_name,last_name,age,dojo_id) 
+VALUES('mohamed','ben salem','28','4'),('salim','ben amin','20','4'),('samir','ben fadhel','25',4);
+
+INSERT INTO dojoo.ninjas (first_name,last_name,age,dojo_id) 
+VALUES('amin','ben salah','24','5'),('nawfel','ben ismail','21','5'),('samir','souilah','35','5');
+
+INSERT INTO dojoo.ninjas (first_name,last_name,age,dojo_id) 
+VALUES('mostpha','ben kamel','36','6'),('talel','ben mahmoud','22','6'),('saif','ben rjab','19','6');
+
+select * from ninjas where dojo_id='4';
+select * from ninjas where dojo_id='6';
+
+SELECT * FROM dojos
+JOIN ninjas ON dojos.id=ninjas.dojo_id
+WHERE ninjas.id=6;
+
+SELECT * FROM dojos
+JOIN ninjas ON dojos.id=ninjas.dojo_id;
+
+
