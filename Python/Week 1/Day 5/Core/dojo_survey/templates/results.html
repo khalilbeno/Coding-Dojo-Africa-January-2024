@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Counter</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="result-div">
+            <h1>{{ name }}</h1>
+        </div>
+
+        <div class="result-div">
+            <h4>Dojo Location: {{ dojo_location }}</h4>
+        </div>
+
+        <div class="result-div">
+            <h4>Favorite Language: {{ favorite_language }}</h4>
+        </div>
+
+        <div class="result-div">
+            <h4>Comments:</h4>
+            <p>{{ comments }}</p>
+        </div>
+
+        <form action="/reset" method="post">
+            <button class="button margin-top">Reset</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
