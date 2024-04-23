@@ -1,0 +1,50 @@
+> use my_first_db
+switched to db my_first_db
+> db.students.insert({name : "Khalil", home_state : "tunisia", lucky_number : 7, birthday : [{ month : 9, day : 8, year : 1995}]})
+ WriteResult({ "nInserted" : 1 })
+ > db.students.insert({name : "ahmed", home_state : "tunisia", lucky_number : 20, birthday : [ { month : 3, day : 31, year : 1995} ]})
+
+WriteResult({ "nInserted" : 1 })
+> db.students.insert({name : "syrine", home_state : "tunisia", lucky_number : 20, birthday : [{ month : 3, day : 31, year : 2002]})
+WriteResult({ "nInserted" : 1 })
+> db.students.insert({name : "omar", home_state : "tunisia", lucky_number : 20, birthday : [{ month : 10, day : 31, year : 1999}]})
+ WriteResult({ "nInserted" : 1 })
+ > db.students.insert({name : "muftah", home_state : "lybie", lucky_number : 7, birthday : [{ month : 3, day : 31, year : 2004}]})
+WriteResult({ "nInserted" : 1 })
+ > db.students.find().pretty()
+ > db.students.find({home_state : "tunisia"}).pretty()
+ > db.students.find({home_state : "lybie"}).pretty()
+ > db.students.find({lucky_number : {$gt: 3}})
+ > db.students.find({lucky_number : {$lte: 10}})
+ > db.students.find({lucky_number : {$gt : 1 , $lte : 9}})
+ > db.students.update({name : "khalil"}, { $set : { interests : ["coding", "brunch", "MongoDB", "SQL" ] } })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({name : "ahmed"}, { $set : { interests : ["coding", "brunch", "MongoDB", "python" ] } })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({name : "syrine"}, { $set : { interests : ["coding", "brunch", "MongoDB", "business" ] } })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({name : "muftah"}, { $set : { interests : ["coding", "brunch", "MongoDB", "painting" ] } })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({name : "omar"}, { $set : { interests : ["coding", "brunch", "MongoDB", "football" ] } })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({name : "omar"}, {$pop : {interests : 1} })
+ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+ > db.students.remove({home_state : "tunisia"})
+WriteResult({ "nRemoved" : 3 })
+> db.students.remove({name : "ahmed"})
+WriteResult({ "nRemoved" : 1 })
+> db.students.remove({lucky_number : {$gt : 5}}, true)
+WriteResult({ "nRemoved" : 1 })
+> db.students.update({name : "khalil"}, { $set : {number_of_belts : 0 }})
+> db.students.update({home_state : "france"}, {$set : {number_of_belts : 1}})
+> db.students.update({}, { $rename : {number_of_belts : "belts_earned"}})
+ db.students.update({}, {$unset: {lucky_number : ""}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.students.update({}, {$set : {updated_on : Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
