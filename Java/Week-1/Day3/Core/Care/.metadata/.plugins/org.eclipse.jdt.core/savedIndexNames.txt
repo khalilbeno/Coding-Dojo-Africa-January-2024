@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\kbeno\Desktop\coding dojo\Coding-Dojo-Africa-January-2024\Java\Week-1\Day3\Core\Care\.metadata\.plugins\org.eclipse.jdt.core
+1453749426.index
+1865797976.index
+1211951193.index
