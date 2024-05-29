@@ -36,7 +36,12 @@ public class BookController {
 		model.addAttribute("book", book);
 		return "show.jsp";
 	}
-	
+	 @RequestMapping("/books")
+	    public String show(Model model) {
+	        List<Book> books = bookService.allBooks();
+	        model.addAttribute("books", books);
+	        return "index.jsp";
+	 }
 	
 	
 }
