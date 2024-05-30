@@ -1,6 +1,7 @@
 package com.khalil.travels.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,9 +29,15 @@ public class TravelService {
 	    }
 	 
 	 //find one
-	 public Travel findTravel(Long id) {
-	        return travelRepo.findById(id).orElse(null);
-	    }
+	 public Travel findTravelByID(Long id) {
+	     Optional<Travel> optionalTravel = travelRepo.findById(id);
+	     if(optionalTravel.isPresent()) {
+	         return optionalTravel.get();
+	     } else {
+	         return null;
+	     }
+	 }
+	    
 	//delete 
 	 public void deleteTravel(Long id) {
 			travelRepo.deleteById(id);

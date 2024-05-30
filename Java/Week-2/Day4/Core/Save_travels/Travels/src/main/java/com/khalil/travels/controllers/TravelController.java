@@ -43,14 +43,14 @@ public class TravelController {
 	
 	@GetMapping("/travels/edit/{id}")
     public String edit(@PathVariable("id") Long id, Model model) {
-        Travel travel = travelServ.findTravel(id);
+        Travel travel = travelServ.findTravelByID(id);
         model.addAttribute("travel", travel);
         return "edit.jsp";
     }
 	
 	@GetMapping("/travels/{id}")
     public String show(@PathVariable("id") Long id, Model model) {
-        Travel travel = travelServ.findTravel(id);
+        Travel travel = travelServ.findTravelByID(id);
         model.addAttribute("travel", travel);
         return "show.jsp";
     }
