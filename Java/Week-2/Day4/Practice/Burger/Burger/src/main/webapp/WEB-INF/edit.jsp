@@ -13,36 +13,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>edit</title>
 </head>
 <body>
 <div class="container mt-3">
-	<div>
-		<h1>Burger Tracker</h1>
-		<table class="table">
-		<thead>
-		<tr>
-		<th>Burger Name</th>
-		<th>Restaurent Name</th>
-		<th>Rating (out of 5)</th>
-		<th>Action</th>
-		</tr>
-		</thead>
-		<tbody>
-		<c:forEach items="${ allBurgers}" var="burger">
-		<tr>
-		<td>${burger.burgerName }</td>
-		<td>${burger.restaurentName }</td>
-		<td>${burger.rating }</td>
-		<td><a href="/burgers/edit/${burger.id }">Edit</a></td>
-		</tr>
-		</c:forEach>
-		</tbody>
-		</table>
-	</div>
-	<div>
-		<h1>Add a burger</h1>
-		<form:form action="/processNew" method="post" modelAttribute="burger">
+<div>
+		<h1>Edit a burger</h1>
+		<form:form action="/edit/${burger.id}" method="post" modelAttribute="burger">
+			<input type="hidden" name="_method" value="put">
 			<form:label class="from-label" path="burgerName">Burger Name</form:label>
 			<form:input class="from-control" path="burgerName"/>
 			<form:errors class="from-danger" path="burgerName"></form:errors>

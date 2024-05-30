@@ -22,4 +22,13 @@ public class BurgerService {
 	 public List<Burger> allBurgers() {
 	     return burgerRepo.findAll();
 	 }
+	 //update
+	 public Burger updateBurger(Burger b) {
+	        return burgerRepo.save(b);
+	    }
+	 
+	 //find one
+	 public Burger findBurger(Long id) {
+	        return burgerRepo.findById(id).orElse(null);
+	    }
 }
